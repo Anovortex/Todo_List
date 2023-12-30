@@ -1,0 +1,115 @@
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 0.8rem;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 33.75rem;
+    background: #fff;
+    margin:6.25rem auto 1.25rem ;
+    padding: 2.5em 1.875rem 4.4rem ;
+    border-radius: 1em;
+
+}
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25em;
+}
+
+.todo-app h2 img{
+    width: 1.875rem;
+    margin-left: 1rem ;
+}
+
+.todo-app .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0;
+    border-radius: 2.875em;
+    padding-left: 1.25em;
+    margin-bottom: 1.5em;
+}
+
+.todo-app input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0.8em;
+    font-weight: 1em;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 1em 3.125em;
+    background: #ff5945;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 2.875rem;
+}
+
+ul li{
+    list-style:none;
+    font-size: 1rem;
+    padding: 0.75em 0.5em 0.75em 3.125rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+ul li:before{
+    content: "";
+    position: absolute;
+    height: 1.75em;
+    width: 1.75em;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 0.75em;
+    left: 0.5em;
+}
+
+.checked{
+    color: #555;
+    text-decoration: line-through;
+
+}
+
+.checked::before{
+    background-image: url(images/checked.png);
+}
+
+span{
+    position: absolute;
+    right:0;
+    top: 0.25em;
+    width: 2.875em;
+    height: 2.875em;
+    font: 1.4rem;
+    color: #555;
+    line-height: 2.875em;
+    text-align: center;
+    border-radius: 50%;
+}
+
+span:hover{
+    background: #edeef0;
+}
